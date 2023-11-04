@@ -1,5 +1,5 @@
 ---
-title: Youth Dance Workshop Registration Open
+title: Youth Dance Workshop
 excerpt: Ignite your passion for dance with us
 date: 2024-05-03
 tags: news
