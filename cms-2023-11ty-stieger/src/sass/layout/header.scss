@@ -1,0 +1,171 @@
+header {
+
+  a {
+    color: white;
+  }
+}
+
+@include breakpoint(0, $mobile) {
+  header {
+    background-image: url('./images/headerBackgroundmobile.jpg');
+    background-size: cover;
+    background-size: 110%;
+    height: 25rem;
+    position: relative;
+
+    h2 {
+      color: $font;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      font-weight: 100;
+    }
+
+    .herotitle {
+      padding-top: 13rem;
+      text-align: left;
+      padding-left: 12rem;
+    }
+
+    .button {
+      padding: 5px;
+    }
+
+    .nav-bar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    nav {
+      background-color: $bggray;
+      height: 25rem;
+      width: 40%;
+      margin: 0;
+      position: absolute;
+      right: 0;
+
+
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .open {
+      background-color: $bggray;
+
+      p {
+        color: $font;
+        size: 2rem;
+        font-weight: 700;
+        text-align: right;
+        padding-top: 1rem;
+        padding-right: 1.5rem;
+      }
+    }
+
+    ul {
+
+      text-align: right;
+      padding: 1rem;
+
+    }
+
+    li {
+      padding: 0.5rem;
+    }
+
+    .nav-button {
+      margin: 2rem;
+      width: 30px;
+      height: 20px;
+      position: relative;
+      cursor: pointer;
+      background-color: transparent;
+    }
+
+    /* Strich-Stile */
+    .bar {
+      height: 4px;
+      background-color: $font;
+      position: absolute;
+      right: 0;
+    }
+
+    .top-bar {
+      top: 0;
+      width: 100%;
+    }
+
+    .bottom-bar {
+      bottom: 0;
+      width: 70%;
+      /* Hier kannst du die Länge des oberen Strichs anpassen */
+    }
+  }
+}
+
+@include breakpoint($desktop) {
+
+  .nav-button {
+    display: none;
+  }
+
+  header {
+    margin-bottom: 8rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 40rem;
+    background-image: url('./images/headerBackground.jpg');
+    background-size: cover;
+
+    h2 {
+      font-size: 2.5rem;
+      color: $font;
+      padding-bottom: 1.5rem;
+
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+
+      li {
+        padding-left: 1.5rem;
+
+        a {
+          color: $lightorange;
+          border-bottom: $lightorange 1px solid;
+        }
+      }
+    }
+
+    #burger-template {
+      display: none;
+    }
+
+    .herotitle {
+      padding-bottom: 17rem;
+      text-align: left;
+      padding-left: 13rem;
+
+      .button {
+        padding: 10px 35px 10px 35px;
+      }
+    }
+
+  }
+
+  .nav-bar {
+    padding-left: 1.6rem;
+    padding-right: 2.8rem;
+    padding-top: 1.8rem;
+    display: flex;
+
+    justify-content: space-between;
+  }
+
+}

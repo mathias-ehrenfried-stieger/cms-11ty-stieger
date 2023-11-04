@@ -1,0 +1,29 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+.button{
+  text-transform: uppercase;
+  border: 1px solid #F4A76C;
+
+}
+a {
+  text-decoration: none;
+  color: $font;
+}
+html{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 100;
+
+
+}
+@include breakpoint($mobile) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+@include breakpoint($desktop) {
+  :root {
+    font-size: 23px;
+  }
+}

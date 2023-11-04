@@ -1,0 +1,190 @@
+
+@include breakpoint(0, $mobile) {
+ .display-desktop{
+  display: none;
+ }
+.quote{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1rem;
+  img{
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+h3{
+  font-size: 1.5rem;
+  color: $font;
+}
+.workshop-content
+{
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 5rem;
+  .button{
+    width: 10rem;
+    padding: 5px;
+  }
+}
+.display-mobile{
+  blockquote{
+    color: white;
+  }
+}
+.level-field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  p{
+    color: white;
+  }
+  margin-bottom: 2rem;
+}
+
+.small{
+  background-color: $light;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: right;
+  color: $font;
+  margin-left: 60%;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+  .level-field{
+    background-color: $bggray;
+    margin-bottom: 2rem;
+  }
+
+  .yoga-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 4rem;
+    background-color: $lightgrey;
+    position: absolute;
+    top: -20%;
+  }
+ .yoga-img{
+  height: 5rem;
+  width: 5rem;
+ } 
+
+}
+
+@include breakpoint($desktop) {
+
+  .display-mobile{
+    display: none;
+  }
+  
+   .yoga-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 10rem;
+    background-color: $lightgrey;
+    border-radius: 5rem;
+    padding: 1.5rem;
+    margin: 1rem;
+   }
+  
+    .level {
+      display: flex;
+       width: 60%;    
+       margin-left: 2rem;
+       margin-right: 2rem;
+    }
+    
+    .large {
+      font-size: 9rem;
+      position: relative;
+      top: 2rem;
+      left: 0.5rem;
+      color: $bggray;
+      font-weight: 700;
+    }
+
+   .special{
+      top: -2rem;
+    }
+
+    .special1{
+      top: 4.3rem;
+    }
+    
+    .level-field {
+      display: flex;
+      justify-content: space-between;
+      p,blockquote {
+        color: white;
+      }
+      background-color:$bggray;
+    }  
+ .workshop {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    
+  }
+
+  .workshop-content {
+    width: 20rem;
+    h3, p{
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      font-weight: 100;
+    }
+    .button{
+      margin: .5rem;
+      padding: 10px;
+    }
+  }
+
+  .third{
+    align-self: flex-end;
+  }
+  .second{
+    align-self: center;
+  }
+  .quote{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 10rem;
+    justify-content: space-between;
+    font-size: 1.8rem;
+
+    img{
+      width: 5rem;
+      height: 5rem;
+    }
+    .q1{
+      align-self: flex-end;
+    }
+    .q2{
+      align-self: center;
+    }
+    .q3{
+      align-self: flex-start;
+    }
+  }
+}
+
+

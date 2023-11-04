@@ -1,0 +1,55 @@
+
+@include breakpoint(0, $mobile) {
+  footer {
+    background-color: $bggray;
+    height: 6rem;
+    h4 {
+      color: white;
+      font-size: 1rem;
+      padding-bottom: 10px;
+    }
+    p {
+      color: white;
+      font-size: 0.8rem;
+      
+    a {
+      color: #FFAD6E;
+      text-decoration: none;
+    }
+    a:visited{
+      color: #FFAD6E;
+      text-decoration: none;
+    }
+  }
+  }
+}
+
+@include breakpoint($desktop) {
+  footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: $bggray;
+  height: 11rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+    h4 {
+      color: white;
+      font-size: 25px;
+      
+      padding-bottom: 10px;
+      
+    }
+    p {
+      color: white;
+      font-size: 20px;
+      
+    }
+    a {
+      color: #FFAD6E;
+      text-decoration: none;
+      
+    }
+  }
+}
